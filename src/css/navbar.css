@@ -1,0 +1,34 @@
+/* Colors */
+:root {
+    --primary-color: #222222;
+    --accent-color: #ffffff;
+    --primary-text-color: #222222;
+    --header-text-font-size: 2em;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-brand {
+    color: var(--accent-color);
+    height: var(--header-text-font-size);
+    /* font-size: var(--header-text-font-size); */
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    color: var(--accent-color);
+}
+
+.navbar .navbar-text {
+    color: var(--accent-color);
+}
+
+.navbar a {
+    color: var(--accent-color);
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
