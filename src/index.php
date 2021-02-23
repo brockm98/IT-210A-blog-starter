@@ -1,31 +1,3 @@
-<?php 
-    // TODO: Start our PHP session for us
-    session_start();
-
-    // TODO: Make SQL query
-    // Read variables and create connection
-    $mysql_servername = getenv("MYSQL_SERVERNAME");
-    $mysql_user = getenv("MYSQL_USER");
-    $mysql_password = getenv("MYSQL_PASSWORD");
-    $mysql_database = getenv("MYSQL_DATABASE");
-    $conn = new mysqli($mysql_servername, $mysql_user, $mysql_password, $mysql_database);
-
-    // Query String
-    $query_string = "SELECT * FROM photos";
-    $result = $conn->query($query_string);
-    // foreach($result as $item) {
-    //     echo "{$item["image_url"]} <br>";
-    // }
-
-    // TODO: Build HTML for carosuel item
-    function build_html_for_carousel_item($item) {
-
-    }
-
-    //Close the connection
-    $conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
